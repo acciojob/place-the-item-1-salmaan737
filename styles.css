@@ -1,2 +1,28 @@
 
 /* Your CSS Code here. */
+.holder {
+    display: flex;
+    justify-content: space-between; /* Items will have space between them */
+    flex-wrap: wrap; /* Items will wrap to the next row when needed */
+  }
+  
+  .item {
+    flex: 0 0 calc(33.33% - 10px); /* Each item takes up one-third of the available width minus spacing */
+    margin: 5px; /* Adjust spacing between items */
+    background-color: #ccc; /* Just for visualization */
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* To make the first and last items touch the ends */
+  .item:first-child {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  
+  .item:last-child {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+  
